@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="{{ url_for('static', filename = 'styles/styles.css')}}" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Please login</h1>
+    <form action="http://127.0.0.1:5500/login" method="POST">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="Username" required>
+
+        <label for="password">Password</label>
+        <input type="text" id="password" name="Password" required>
+
+        <button type="submit">Login</button>
+
+    </form>
+</body>
+</html>

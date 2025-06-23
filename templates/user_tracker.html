@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{username}}'s Tracker</title>
+    <link href="{{ url_for('static', filename = 'styles/styles.css')}}" rel="stylesheet"/>
+</head>
+<body>
+    <h1>{{username}}'s Tracker</h1>
+    <p>Welcome! {{username}}</p>
+    <p>Your last period happened on: {{last_period_date}}</p>
+    <p>Your next period is estimated to happen on {{next_period_date}}</p>
+</body>
+</html>
